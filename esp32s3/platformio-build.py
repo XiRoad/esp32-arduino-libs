@@ -308,8 +308,8 @@ env.Append(
         join(FRAMEWORK_SDK_DIR, "esp32s3", "include", "touch_element", "include"),
         join(FRAMEWORK_SDK_DIR, "esp32s3", "include", "ulp", "ulp_common", "include"),
         join(FRAMEWORK_SDK_DIR, "esp32s3", "include", "ulp", "ulp_common", "include", "esp32s3"),
-        join(FRAMEWORK_SDK_DIR, "esp32s3", "include", "ulp", "ulp_fsm", "include"),
-        join(FRAMEWORK_SDK_DIR, "esp32s3", "include", "ulp", "ulp_fsm", "include", "esp32s3"),
+        join(FRAMEWORK_SDK_DIR, "esp32s3", "include", "ulp", "ulp_riscv", "include"),
+        join(FRAMEWORK_SDK_DIR, "esp32s3", "include", "ulp", "ulp_riscv", "shared", "include"),
         join(FRAMEWORK_SDK_DIR, "esp32s3", "include", "usb", "include"),
         join(FRAMEWORK_SDK_DIR, "esp32s3", "include", "wifi_provisioning", "include"),
         join(FRAMEWORK_SDK_DIR, "esp32s3", "include", "espressif__esp-nn", "include"),
@@ -388,7 +388,7 @@ env.Append(
 
     CPPDEFINES=[
         "ESP_PLATFORM",
-        ("IDF_VER", '\\"v5.1.4-555-g9069767c9e-dirty\\"'),
+        ("IDF_VER", '\\"v5.1.4-556-g2f8bb24310-dirty\\"'),
         ("MBEDTLS_CONFIG_FILE", '\\"mbedtls/esp_config.h\\"'),
         ("SOC_MMU_PAGE_SIZE", 'CONFIG_MMU_PAGE_SIZE'),
         "UNITY_INCLUDE_CONFIG_H",
